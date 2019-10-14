@@ -98,7 +98,7 @@
      text-transform: uppercase;
      animation: moveup 2s;
      animation-delay: 50ms;
-     
+     animation-fill-mode: both;
 
  }
  @keyframes moveup{
@@ -198,10 +198,10 @@ text-decoration: initial;
          
      }
      .head2{
-       
+       margin-top: -220px;
          z-index: 0;
          background-color:rgb(241, 239, 241) ;
-         height: 100vh;
+         height: 110vh;
     background-size: cover;
      background-position: center;
     
@@ -283,7 +283,7 @@ text-decoration: initial;
             transform: translate(-250px, -370px);
             z-index: 3;
             margin: 5px;
-            box-shadow:20px 20px 10px grey; 
+            box-shadow:20px 20px 10px rgba(128, 128, 128, .5); 
              
         }
         .img2{
@@ -291,14 +291,14 @@ text-decoration: initial;
            
             float: right;
             transform: translate(10px,-115px);
-            box-shadow:20px 20px 10px grey; 
+            box-shadow:20px 20px 10px rgba(128, 128, 128, .5) ; 
         }
         .img3{
             z-index: 4;
             
             float: right;
             transform: translate(500px,-220px);
-            box-shadow:20px 20px 10px grey; 
+            box-shadow:20px 20px 10px rgba(128, 128, 128, .5) ; 
         }
         .img1:hover{
             padding: 0px;
@@ -318,6 +318,9 @@ text-decoration: initial;
             outline: 10px solid seagreen;
             outline-offset: 15px;
             z-index: 10 ;
+        }
+        .secondhead{
+         padding-top: 150px;
         }
        
     
