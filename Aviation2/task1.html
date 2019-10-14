@@ -199,37 +199,40 @@ text-decoration: initial;
      }
      .head2{
        
-         z-index: -1;
+         z-index: 0;
          background-color:rgb(241, 239, 241) ;
          height: 100vh;
     background-size: cover;
      background-position: center;
-         
+    
          
      }
-     .head2:after{
+     .head2::after{
          position: absolute;
          transform-origin: bottom left;
-         transform: skewY(3deg);
+         transform: skewY(-3deg);
      }
    
        
      .par{
-        
-        margin-top: 50px;
+        width: auto;
+        padding-top: 50px;
         font-family: 'Muli', sans-serif;
         font-size: 25px;
         background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
+            cursor: default;
+            
         
         
          }
          .par:hover{
             
-             transform: skew(3deg,3deg);
-             transform: scaleZ(3deg);
-             text-shadow:5px 5px 10px rgba(0, 0, 0, .5); 
+            transform:skew(5deg,5deg);
+            z-index: 20;
+             text-shadow:5px 5px 10px rgba(0, 0, 0, .25); 
+             cursor: default;
 
          }
         
@@ -275,7 +278,7 @@ text-decoration: initial;
 
         }
         .img1{
-            padding: 5px;
+            
             float: right;
             transform: translate(-250px, -370px);
             z-index: 3;
@@ -285,34 +288,38 @@ text-decoration: initial;
         }
         .img2{
             z-index: 5;
-            padding: 5px;
+           
             float: right;
             transform: translate(10px,-115px);
             box-shadow:20px 20px 10px grey; 
         }
         .img3{
             z-index: 4;
-            padding: 5px;
+            
             float: right;
             transform: translate(500px,-220px);
             box-shadow:20px 20px 10px grey; 
         }
         .img1:hover{
-            border: 10px seagreen solid;
-            border-spacing: 20px;
+            padding: 0px;
+            outline: 10px solid seagreen;
+            outline-offset: 15px;
             z-index: 10 ;
         }
         .img2:hover{
-            border: 10px seagreen solid;
-            border-spacing: 20px;
+            padding: 0px;
+            outline: 10px solid seagreen;
+            outline-offset: 15px;
             z-index: 10 ;
            
         }
         .img3:hover{
-            border: 10px seagreen solid;
-            border-spacing: 20px;
+            padding: 0px;
+            outline: 10px solid seagreen;
+            outline-offset: 15px;
             z-index: 10 ;
         }
+       
     
     </style>
 </head>
@@ -341,7 +348,8 @@ text-decoration: initial;
         </div>
     </header>
     <header class="head2">
-        <div class="secondhead" style="height: 1000px;">
+       
+        <div class="secondhead" style="height: 700px;">
             <h4 class="par" style="text-align: center; text-transform: uppercase; top: 20%;" >EXCITING TOURS FOR adventurous PEOPLE </h4>
            
             <div class="text">
