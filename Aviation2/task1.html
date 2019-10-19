@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
  .head1{
      position: relative;
@@ -47,7 +48,7 @@
 .btn a:hover{
      color: teal;
  }
- h1{
+ .out{
      position: absolute;
      top: 30%;
      left:40%;
@@ -420,7 +421,90 @@ text-decoration: initial;
             transform-origin: bottom left;
             transform: skewY(-3deg);
         }
+        .head4{
+            background-color:rgb(241, 239, 241) ;
+            transform-origin: bottom left;
+            transform:skewY(-3deg);
+            margin-top: -82px;
+            z-index: -1;
+        }
+        .tours{
+            position: absolute;
+            left:10% ;
+            right: 10%;
+        }
+       .sea{
+        background-color:white ;
+        display:inline-block;
+        text-align: center;
+        margin: 20px;
        
+        
+       }
+       .forest{
+        background-color:white ;
+        display:inline-block;
+        text-align: center;
+        margin: 20px;
+        
+       }
+       .snow{
+        background-color:white ;
+        display:inline-block;
+        text-align: center;
+        margin: 20px;
+        
+       }
+       ul {
+           display: block;
+           list-style: none;
+       }
+       li{
+           border-bottom: .5px rgba(155, 155, 155, 0.5) solid ;
+           color:rgb(63, 60, 60) ;
+           font-family: 'Nunito', sans-serif;
+           line-height: 40px;
+           width: 80%;
+           
+       }
+       .seat{
+        background-image:linear-gradient(rgba(255, 179, 102,0.7),rgba(255, 153, 51,0.5));
+        width: 30px;
+       }
+       .fort{
+
+       }
+       .snowt{
+
+       }
+       .seai{
+        background-image: linear-gradient(rgba(255, 128, 64,0.2));
+        -webkit-text-fill-color: transparent;
+            -webkit-background-clip: image;
+       }
+       .fori{
+
+       }
+       .snowi{
+
+       }
+       .sead{
+           background-image: linear-gradient(rgba(255, 153, 102, 0.5),rgba(158, 74, 32, 0.5),rgba(250, 152, 5, 0.5));
+           transform-origin: bottom left;
+           transform: skewY(-3deg);
+          
+       }
+       .ford{
+        background-image: linear-gradient(rgba(0, 204, 0, 0.5),rgba(0, 230, 0, 0.5));
+           transform-origin: bottom left;
+           transform: skewY(-3deg);
+       }
+       .snowd{
+        background-image: linear-gradient(rgba(0, 0, 255, 0.5),rgba(0, 0, 204, 0.5));
+           transform-origin: bottom left;
+           transform: skewY(-3deg);
+
+       }
     
     </style>
 </head>
@@ -435,7 +519,7 @@ text-decoration: initial;
         </div>
          <div>
         <div class="title" >
-                <h1 > o  u  t  d  o  o  r  s  </h1>
+                <h1 class="out" > o  u  t  d  o  o  r  s  </h1>
             </div>
             <div class="title2"> 
                 <h3 class="moving"> is where life happens </h3>
@@ -488,7 +572,7 @@ text-decoration: initial;
         <div class="skewed" >
         
                 <article class="art1">
-                    <img src="world.png" style=" background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
+                    <img src="world.png" type="text" style=" background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: png;">
                     <h4 style="font-family: 'Muli', sans-serif; ">Explore the world</h4>
@@ -537,18 +621,101 @@ text-decoration: initial;
         
     </header>
     <header class="head4" style="height: 110vh;">
-        <div>
-            <article class="tour1">
-
+        <div style=" transform-origin: bottom left;
+        transform:skewY(3deg);">
+        <h6 style=" background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; font-size: 35px; font-family: 'Muli', sans-serif; text-align: center;
+        padding: 20px;">
+            MOST POPULAR TOURS
+        </h6>
+        <div class="tours">
+            <article class="sea">
+                <div>
+                    <div class="sead">
+                <img class="seai" src="sea.jpg" width="350vh" width="350vh" style="transform-origin: bottom left; 
+                transform: skewY(-3deg), skewY(3deg); z-index: -1;">
+                </div>
+                <p class="seat" style="
+                font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
+                    THE SEA <br>
+                        EXPLORER</p>
+              <ul>
+                  <li>
+                    3 days tour
+                  </li>
+                 
+                  <li>
+                    Up to 30 people
+                    </li>
+                    
+                    <li>
+                        2 tour guides
+                        </li>
+                        <li>
+                            Sleep in cozy hotels
+                            </li>
+                            <li style="border: none;">
+                                Difficulty : Easy
+                                </li>
+              </ul>
             </article>
-            <article class="tour2">
-
+            <article class="forest">
+                <div class="ford">
+                    <img class="fori" src="forest.jpg" width="350vh" width="350vh" style="transform-origin: bottom left; 
+                    transform: skewY(-3deg),skewY(3deg) ; z-index: -1; ">
+                    </div>
+                    <p class="fort" style="font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
+                        THE FOREST
+                    
+                     HIKER</p>
+                  <ul>
+                      <li>
+                        7 days tour
+                      </li>
+                      <li>
+                        Up to 40 people
+                        </li>
+                        <li>
+                            6 tour guides
+                            </li>
+                            <li>
+                                Sleep in provided tents
+                                </li>
+                                <li style="border: none;">
+                                    Difficulty : Medium
+                                    </li>
+                  </ul>
             </article>
-            <article class="tour3">
-
+            <article class="snow">
+                <div class="snowd">
+                    <img class="snowi" src="snow.jpg" width="350vh" width="350vh" style="transform-origin: bottom left; 
+                    transform: skewY(-3deg) skewY(3deg);">
+                    </div>
+                    <p class="snowt" style="font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
+                        THE SNOW
+                    
+                     ADVENTURER </p>
+                  <ul>
+                      <li>
+                        5 days tour
+                      </li>
+                      <li>
+                        Up to 15 people
+                        </li>
+                        <li>
+                            3 tour guides
+                            </li>
+                            <li>
+                                    Sleep in provided tents
+                                </li>
+                                <li style="border: none;">
+                                    Difficulty : Hard
+                                    </li>
+                  </ul>
             </article>
         </div>
-
+    </div>
     </header>
      </div>
     
