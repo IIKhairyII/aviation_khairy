@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>OUTDOOR LIFE </title>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
      position: relative;
      
      z-index: 10;
-     background-image:linear-gradient(rgba(126, 213, 111,0.7),rgba(85, 197, 122,0.7),rgba(40, 180, 133,0.7)) ,url(hero.jpg);
+     background-image:linear-gradient(rgba(126, 213, 111,0.7),rgba(85, 197, 122,0.7),rgba(40, 180, 133,0.9)) ,url(hero.jpg);
      clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%);
      height: 100vh;
     background-size: cover;
@@ -109,11 +110,36 @@
          opacity: 1;
          transform: translateY(0)
      }
-
+     
  }
+ 
  .btn:hover{
     background-color: white;
     cursor: pointer;
+    transform: translateY(-20px);
+    
+    
+ }
+ .btn::after{
+     content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     background-color: white;
+     border-bottom-left-radius: 25px; 
+     border-bottom-right-radius: 25px;
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+     z-index: -1;
+     transition-property: all;
+     transition-duration: .2s;
+     
+ }
+ .btn:hover::after{
+    opacity: 0;
+     transform: scale(1.5,1.5);
  }
  .logo{
      float: left;
@@ -201,7 +227,7 @@ text-decoration: initial;
        margin-top: -220px;
          z-index: 0;
          background-color:rgb(241, 239, 241) ;
-         height: 110vh;
+         height: 115vh;
     background-size: cover;
      background-position: center;
     
@@ -280,47 +306,119 @@ text-decoration: initial;
         .img1{
             
             float: right;
-            transform: translate(-250px, -370px);
+            position: absolute;
+            top: 115%;
+            left: 60%;
             z-index: 3;
             margin: 5px;
-            box-shadow:20px 20px 10px rgba(128, 128, 128, .5); 
+            box-shadow:0px 10px 10px rgba(128, 128, 128, .5); 
+            transition: all 0.3s ease-out;
              
         }
         .img2{
             z-index: 5;
-           
             float: right;
-            transform: translate(10px,-115px);
-            box-shadow:20px 20px 10px rgba(128, 128, 128, .5) ; 
+            position: absolute;
+            top:130%;
+            left: 70%;
+            box-shadow:0px 20px 10px rgba(128, 128, 128, .5) ; 
+            transition: all 0.3s ease-out;
         }
         .img3{
             z-index: 4;
-            
             float: right;
-            transform: translate(500px,-220px);
-            box-shadow:20px 20px 10px rgba(128, 128, 128, .5) ; 
+            position: absolute;
+            top:140%;
+            left: 55%;
+            
+            box-shadow:0px 10px 10px rgba(128, 128, 128, .5) ; 
+            transition: all 0.3s ease-out;
         }
-        .img1:hover{
-            padding: 0px;
+         .img1:hover{
             outline: 10px solid seagreen;
             outline-offset: 15px;
-            z-index: 10 ;
-        }
-        .img2:hover{
-            padding: 0px;
-            outline: 10px solid seagreen;
-            outline-offset: 15px;
-            z-index: 10 ;
+            z-index: 20 ;
+            transform: scale(1.2,1.2);
            
         }
-        .img3:hover{
+         .img2:hover{
             padding: 0px;
             outline: 10px solid seagreen;
             outline-offset: 15px;
-            z-index: 10 ;
+            z-index: 20 ;
+            transform: scale(1.2,1.2);
+            
+        }
+         .img3:hover{
+            padding: 0px;
+            outline: 10px solid seagreen;
+            outline-offset: 15px;
+            z-index: 20 ;
+            transform: scale(1.2,1.2);
         }
         .secondhead{
          padding-top: 150px;
+        }
+        .img:hover img:not(:hover){
+            transform: scale(0.95);
+        }
+        .head3{
+            
+        background-image:linear-gradient(rgba(126, 213, 111,0.7),rgba(85, 197, 122,0.7),rgba(40, 180, 133,0.9)), url(mount.jpg);
+           background-size: cover;
+        }
+        .art1{
+            background-color: rgba(243, 235, 243, 0.842);
+           padding: 20px;
+           text-align: center;
+           margin: 10px;
+            max-width: 30vh ;
+            max-height: 90vh;
+            align-items: center;
+            
+            display:inline-block;
+        }
+        .art2{
+            background-color: rgba(243, 235, 243, 0.842);
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            display:inline-block;
+            max-width: 30vh ;
+            max-height: 90vh;
+        }
+        .art3{
+            background-color: rgba(243, 235, 243, 0.842);
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            display:inline-block;
+            max-width: 30vh ;
+            max-height: 90vh;
+        }
+        .art4{
+            background-color: rgba(243, 235, 243, 0.842);
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            top: 10px;
+            display:inline-block;
+            max-width: 30vh ;
+            max-height: 90%;
+        }
+        .skewed{
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            left: 10%;
+            display: inline-block;
+            align-content: center;
+            transform-origin: bottom left;
+            transform: skewY(3deg);
+        }
+        .head3{
+            transform-origin: bottom left;
+            transform: skewY(-3deg);
         }
        
     
@@ -378,12 +476,79 @@ text-decoration: initial;
             </div>
             
             </div>
-            <img class="img1" src="photo1.jpg"  width="300px" height="200px" >
-            <img class="img2" src="photo2.jpg"  width="300px" height="200px">
-            <img class="img3" src="photo3.jpg"  width="300px" height="200px"> 
-           
+            <div class="img">
+                <img class="img1" src="photo1.jpg"  width="300px" height="200px" >
+                <img class="img2" src="photo2.jpg"  width="300px" height="200px">
+                <img class="img3" src="photo3.jpg"  width="300px" height="200px"> 
+            </div>
            
         </div>
+    </header>
+    <header style="height: 105vh;" class="head3">
+        <div class="skewed" >
+        
+                <article class="art1">
+                    <img src="world.png" style=" background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: png;">
+                    <h4 style="font-family: 'Muli', sans-serif; ">Explore the world</h4>
+                    <p style="font-family: 'Muli', sans-serif; ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Ut enim ad minim veniam,
+                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </article>
+                <article class="art2">
+                    <img src="basic_compass.png">
+                    <h4 style="font-family: 'Muli', sans-serif; align-content: center;" >
+                    Meet the nature
+                </h4>
+                <p style="font-family: 'Muli', sans-serif;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua.
+                        Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.      
+                </p>
+                </article>
+                <article class="art3">
+                    <img src="basic_map.png">
+                    <h4 style="font-family: 'Muli', sans-serif;">
+                    Find Your Way
+                    </h4>
+                    <p style="font-family: 'Muli', sans-serif;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </article>
+                <article class="art4">
+                    <img src="basic_heart.png">
+                    <h4 style="font-family: 'Muli', sans-serif;">
+                        Live a Healthier Life
+                    </h4>
+                    <p style="font-family: 'Muli', sans-serif;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                </article>
+        
+        </div>
+        
+    </header>
+    <header class="head4" style="height: 110vh;">
+        <div>
+            <article class="tour1">
+
+            </article>
+            <article class="tour2">
+
+            </article>
+            <article class="tour3">
+
+            </article>
+        </div>
+
     </header>
      </div>
     
