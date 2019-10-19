@@ -376,8 +376,11 @@ text-decoration: initial;
             max-width: 30vh ;
             max-height: 90vh;
             align-items: center;
-            
+            transition: all 0.3s ease-out;
             display:inline-block;
+        }
+        .art1:hover{
+            transform: translate(2px,-15px);
         }
         .art2{
             background-color: rgba(243, 235, 243, 0.842);
@@ -387,6 +390,10 @@ text-decoration: initial;
             display:inline-block;
             max-width: 30vh ;
             max-height: 90vh;
+            transition: all 0.3s ease-out;
+        }
+        .art2:hover{
+            transform: translate(2px,-15px);
         }
         .art3{
             background-color: rgba(243, 235, 243, 0.842);
@@ -396,6 +403,10 @@ text-decoration: initial;
             display:inline-block;
             max-width: 30vh ;
             max-height: 90vh;
+            transition: all 0.3s ease-out;
+        }
+        .art3:hover{
+            transform: translate(2px,-15px);
         }
         .art4{
             background-color: rgba(243, 235, 243, 0.842);
@@ -406,6 +417,10 @@ text-decoration: initial;
             display:inline-block;
             max-width: 30vh ;
             max-height: 90%;
+            transition: all 0.3s ease-out;
+        }
+        .art4:hover{
+            transform: translate(2px,-15px);
         }
         .skewed{
             position: absolute;
@@ -430,6 +445,7 @@ text-decoration: initial;
         }
         .tours{
             position: absolute;
+            top:170%;
             left:10% ;
             right: 10%;
         }
@@ -468,8 +484,8 @@ text-decoration: initial;
            
        }
        .seat{
-        background-image:linear-gradient(rgba(255, 179, 102,0.7),rgba(255, 153, 51,0.5));
-        width: 30px;
+       
+        
        }
        .fort{
 
@@ -483,7 +499,7 @@ text-decoration: initial;
             -webkit-background-clip: image;
        }
        .fori{
-
+        
        }
        .snowi{
 
@@ -503,6 +519,65 @@ text-decoration: initial;
         background-image: linear-gradient(rgba(0, 0, 255, 0.5),rgba(0, 0, 204, 0.5));
            transform-origin: bottom left;
            transform: skewY(-3deg);
+
+       }
+       .the{
+        background-image:linear-gradient(rgba(255, 85, 0, 0.8),rgb(255, 138, 80),rgba(255, 189, 91));
+        position: absolute;
+        font-size: 30px;
+        left: 20%;
+        bottom: 60%;
+        color: white;
+        padding: 2px;
+       }
+       .exp{
+       background-image: linear-gradient(rgba(255, 85, 0, 0.8),rgb(255, 138, 80),rgba(255, 189, 91));
+       position: absolute;
+        font-size: 30px;
+        left: 18%;
+        bottom: 53%;
+
+        color: white;
+        padding: 2px;
+       }
+       .THE{
+        background-image: linear-gradient(rgba(0, 204, 0,0.5),rgb(0, 230, 0));
+        position: absolute;
+        font-size: 30px;
+        left: 48%;
+        bottom: 65%;
+
+        color: white;
+        padding: 2px;
+       }
+       .hiker{
+        background-image: linear-gradient(rgba(0, 204, 0,0.5),rgb(0, 230, 0));
+        position: absolute;
+        font-size: 30px;
+        left: 55%;
+        bottom: 57%;
+        color: white;
+        padding: 2px;
+
+       }
+       .sn{
+        background-image: linear-gradient(rgba(58, 58, 209, 0.5),rgb(45, 45, 148));
+        position: absolute;
+        font-size: 30px;
+        left: 82%;
+        bottom: 65%;
+        color: white;
+        padding: 2px;
+
+       }
+       .adv{
+        background-image: linear-gradient(rgba(58, 58, 209, 0.5),rgb(45, 45, 148));
+        position: absolute;
+        font-size: 30px;
+        left: 79.6%;
+        bottom: 57%;
+        color: white;
+        padding: 2px;
 
        }
     
@@ -575,8 +650,8 @@ text-decoration: initial;
                     <img src="world.png" type="text" style=" background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: png;">
-                    <h4 style="font-family: 'Muli', sans-serif; ">Explore the world</h4>
-                    <p style="font-family: 'Muli', sans-serif; ">
+                    <h4 style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">Explore the world</h4>
+                    <p style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                              Ut enim ad minim veniam,
                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -584,10 +659,10 @@ text-decoration: initial;
                 </article>
                 <article class="art2">
                     <img src="basic_compass.png">
-                    <h4 style="font-family: 'Muli', sans-serif; align-content: center;" >
+                    <h4 style="font-family: 'Muli', sans-serif; align-content: center; color: rgb(66, 65, 65);" >
                     Meet the nature
                 </h4>
-                <p style="font-family: 'Muli', sans-serif;">
+                <p style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua.
                         Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.      
@@ -595,10 +670,10 @@ text-decoration: initial;
                 </article>
                 <article class="art3">
                     <img src="basic_map.png">
-                    <h4 style="font-family: 'Muli', sans-serif;">
+                    <h4 style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">
                     Find Your Way
                     </h4>
-                    <p style="font-family: 'Muli', sans-serif;">
+                    <p style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -606,10 +681,10 @@ text-decoration: initial;
                 </article>
                 <article class="art4">
                     <img src="basic_heart.png">
-                    <h4 style="font-family: 'Muli', sans-serif;">
-                        Live a Healthier Life
+                    <h4 style="font-family: 'Muli', sans-serif; color: rgb((66, 65, 65));">
+                        Live a Healthier Life 
                     </h4>
-                    <p style="font-family: 'Muli', sans-serif;">
+                    <p style="font-family: 'Muli', sans-serif; color: rgb(66, 65, 65);">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -638,8 +713,8 @@ text-decoration: initial;
                 </div>
                 <p class="seat" style="
                 font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
-                    THE SEA <br>
-                        EXPLORER</p>
+                    <span class="the"> THE SEA</span> 
+                        <span class="exp">Explorer</span></p>
               <ul>
                   <li>
                     3 days tour
@@ -666,9 +741,9 @@ text-decoration: initial;
                     transform: skewY(-3deg),skewY(3deg) ; z-index: -1; ">
                     </div>
                     <p class="fort" style="font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
-                        THE FOREST
+                      <span class="THE">  THE FOREST</span>
                     
-                     HIKER</p>
+                     <span class="hiker">  HIKER </span></p>
                   <ul>
                       <li>
                         7 days tour
@@ -690,12 +765,12 @@ text-decoration: initial;
             <article class="snow">
                 <div class="snowd">
                     <img class="snowi" src="snow.jpg" width="350vh" width="350vh" style="transform-origin: bottom left; 
-                    transform: skewY(-3deg) skewY(3deg);">
+                    transform: skewY(-3deg) skewY(3deg); z-index: -1;">
                     </div>
                     <p class="snowt" style="font-family: 'Roboto Condensed', sans-serif; z-index: 5;">
-                        THE SNOW
+                      <span class="sn">  THE SNOW </span>
                     
-                     ADVENTURER </p>
+                    <span class="adv"> ADVENTURER </span></p>
                   <ul>
                       <li>
                         5 days tour
