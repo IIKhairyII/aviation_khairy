@@ -442,7 +442,7 @@ text-decoration: initial;
             transform-origin: bottom left;
             transform:skewY(-3deg);
             margin-top: -82px;
-            z-index: -1;
+            
         }
         .tours{
             position: absolute;
@@ -530,8 +530,11 @@ text-decoration: initial;
            transform: skewY(-3deg);
           
        }
-       .forest:hover {
+       .forest:hover .forfront{
         transform: rotateY(180deg);
+       }
+       .forest:hover .forback{
+        transform: rotateY(360deg);
        }
     .forest .forback{
         background-image: linear-gradient(rgb(0, 204, 0),rgb(209, 253, 14));
@@ -580,12 +583,13 @@ text-decoration: initial;
         backface-visibility: hidden;
     }
     
-       .snow:hover {
+       .snow:hover .snowfront{
         transform: rotateY(180deg);
        }
-       .sea:hover {
-        transform: rotateY(180deg);
+       .snow:hover .snowback{
+        transform: rotateY(360deg);
        }
+      
     .sea .seaback{
         background-image: linear-gradient(rgba(247, 134, 78),rgba(255, 86, 1));
            text-align: center;
@@ -605,6 +609,12 @@ text-decoration: initial;
        .seafront{
         
            backface-visibility: hidden;
+       }
+       .sea:hover .seafront{
+        transform: rotateY(180deg);
+       }
+       .sea:hover .seaback{
+        transform: rotateY(360deg);
        }
 
        .the{
