@@ -1,3 +1,4 @@
+
 body{
     padding: 1.5rem;
 }
@@ -146,9 +147,10 @@ font-weight: bold;
 .ph1{
     z-index: 3;
     height: 13rem;
-    position: relative;
-    left: 50%;
-    bottom: 15rem; 
+    float: right;
+    position: absolute;
+    top: -16rem;
+    left: 53rem;
     transition: all 0.3s ease-out; 
     box-shadow: rgba(128, 128, 128, 0.7) 1rem 1rem 5rem;
 }
@@ -159,12 +161,13 @@ font-weight: bold;
     z-index: 5;
 }
 .ph2{
-    z-index: 1;
+    z-index: 2;
     width:19rem;
     height: 13rem;
-    position: relative;
-    left: 23rem;
-    bottom: 22rem;
+    float: right;
+    position: absolute;
+    top:-20rem;
+    left: 60rem;
     transition: all 0.3s ease-out;
     box-shadow: rgba(128, 128, 128, 0.7) 1rem 1rem 5rem;
 }
@@ -175,11 +178,12 @@ font-weight: bold;
     z-index: 5;
 }
 .ph3{
-    z-index: 2;
+    z-index: 1;
     height: 13rem;
-    position: relative;
-    left: 15rem;
-    bottom: 20rem;
+    float: right;
+     position: absolute;
+    top:-23rem;
+    left: 50rem;
     transition: all 0.3s ease-out;
     box-shadow: rgba(128, 128, 128, 0.7) 1rem 1rem 5rem;
 }
@@ -216,7 +220,7 @@ font-weight: bold;
 }
 .sec21{
     position: relative;
-    top: 11rem;
+    top: 10rem;
     text-align: center;
 }
 .world{
@@ -295,121 +299,117 @@ font-weight: bold;
     margin: 2.5rem;
     
 }
-.card1{
-    perspective: 500000px;
-    position: relative;
-    top: 0.254rem;
-}
 .front1{
-height: 35rem;
-width: 100%;
-background-color: white;
-box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
-backface-visibility: hidden;
-transition: all 0.4s ease-out;
-}
-.card1:hover .front1{
-    transform: rotateY(180deg);
-}
-.card1:hover .back1{
-    transform: rotateY(360deg);
-}
-.back1{
-    position: relative;
-    top: -35.89rem;
-    height: 34.8rem;
+    height: 35rem;
     width: 100%;
-    transform: rotateY(180deg);
-    background-image: linear-gradient(to right bottom,rgba(247, 134, 78),rgba(255, 86, 1));
+    background-color: white;
     box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
     backface-visibility: hidden;
     transition: all 0.4s ease-out;
-    background-size: cover;
-    color: white;
-    font-family: 'Lato','sans-serif';
-    font-size: 2.8rem;
-}
-.div-forest{
-    background-image: linear-gradient(rgba(0, 204, 0, 0.5),rgba(0, 230, 0, 0.5)) , url(forest.jpg);
-    width: 21rem;
-    height: 15rem;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-}
-.tour2{
-    display: inline-block;
-    margin: 2.5rem;
+    }
+    .card1:hover .front1{
+        transform: rotateY(180deg);
+    }
+    .card1:hover .back1{
+        transform: rotateY(360deg);
+    }
+    .back1{
+        position: relative;
+        top: -35.89rem;
+        height: 34.8rem;
+        width: 100%;
+        transform: rotateY(180deg);
+        background-image: linear-gradient(to right bottom,rgba(247, 134, 78),rgba(255, 86, 1));
+        box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
+        backface-visibility: hidden;
+        transition: all 0.4s ease-out;
+        background-size: cover;
+        color: white;
+        font-family: 'Lato','sans-serif';
+        font-size: 2.8rem;
+    }
+    .div-forest{
+        background-image: linear-gradient(rgba(0, 204, 0, 0.5),rgba(0, 230, 0, 0.5)) , url(forest.jpg);
+        width: 21rem;
+        height: 15rem;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+    }
+    .tour2{
+        display: inline-block;
+        margin: 2.5rem;
+        
+    }
+    .front2{
+        height: 35rem;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
+        backface-visibility: hidden;
+        transition: all 0.4s ease-out;
+        }
+        .card2:hover .front2{
+            transform: rotateY(180deg);
+        }
+        .card2:hover .back2{
+            transform: rotateY(360deg);
+        }
+        .back2{
+            position: relative;
+            top: -35.89rem;
+        height: 34.8rem;
+            width: 100%;
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to right bottom,rgb(0, 204, 0),rgb(209, 253, 14));
+            box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
+            backface-visibility: hidden;
+            transition: all 0.4s ease-out;
+            background-size: cover;
+            font-size: 2.8rem;
+            color: white;
+        font-family: 'Lato','sans-serif';
+        }
+    .div-snow{
+        background-image: linear-gradient(rgba(0, 0, 255, 0.23),rgba(0, 0, 204, 0.322)), url(snow.jpg);
+        height: 15rem;
+        width: 21.5rem;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+    }
+    .tour3{
+        display: inline-block;
+        margin: 2.5rem;
+    }
+    .front3{
+        height: 35rem;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
+        backface-visibility: hidden;
+        transition: all 0.4s ease-out;
+        }
+        .card3:hover .front3{
+            transform: rotateY(180deg);
+        }
+        .card3:hover .back3{
+            transform: rotateY(360deg);
+        }
+        .back3{
+            position: relative;
+            top: -35.89rem;
+        height: 34.8rem;
+            width: 100%;
+            transform: rotateY(180deg);
+            background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+            box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
+            backface-visibility: hidden;
+            transition: all 0.4s ease-out;
+            background-size: cover;
+            font-size: 2.8rem;
+            color: white;
+        font-family: 'Lato','sans-serif';
+        }
     
-}
-.front2{
-    height: 35rem;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
-    backface-visibility: hidden;
-    transition: all 0.4s ease-out;
-    }
-    .card2:hover .front2{
-        transform: rotateY(180deg);
-    }
-    .card2:hover .back2{
-        transform: rotateY(360deg);
-    }
-    .back2{
-        position: relative;
-        top: -35.89rem;
-    height: 34.8rem;
-        width: 100%;
-        transform: rotateY(180deg);
-        background-image: linear-gradient(to right bottom,rgb(0, 204, 0),rgb(209, 253, 14));
-        box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
-        backface-visibility: hidden;
-        transition: all 0.4s ease-out;
-        background-size: cover;
-        font-size: 2.8rem;
-        color: white;
-    font-family: 'Lato','sans-serif';
-    }
-.div-snow{
-    background-image: linear-gradient(rgba(0, 0, 255, 0.23),rgba(0, 0, 204, 0.322)), url(snow.jpg);
-    height: 15rem;
-    width: 21.5rem;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-}
-.tour3{
-    display: inline-block;
-    margin: 2.5rem;
-}
-.front3{
-    height: 35rem;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
-    backface-visibility: hidden;
-    transition: all 0.4s ease-out;
-    }
-    .card3:hover .front3{
-        transform: rotateY(180deg);
-    }
-    .card3:hover .back3{
-        transform: rotateY(360deg);
-    }
-    .back3{
-        position: relative;
-        top: -35.89rem;
-    height: 34.8rem;
-        width: 100%;
-        transform: rotateY(180deg);
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
-        box-shadow: 0.3125rem 0.3215px 1.5625rem grey;
-        backface-visibility: hidden;
-        transition: all 0.4s ease-out;
-        background-size: cover;
-        font-size: 2.8rem;
-        color: white;
-    font-family: 'Lato','sans-serif';
-    }
 
 .head2{
     background: linear-gradient(to right,#7ed56f , #55c57a, #28b485 );
@@ -539,4 +539,128 @@ top: -9rem;
 .ul-snow{
     position: relative;
     top: -3rem;
+}
+@media screen and (min-width: 300px) and (max-width: 420px) {
+    html{
+        font-size: 62.5%;
+    }
+ body{
+     padding: 0;
+ }
+ .head1{
+     height: 40rem;
+ }
+ .text11{
+     font-size: 3rem;
+ }
+ .text12{
+     font-size: 1rem;
+ }
+ .button{
+     position: relative;
+     left: 10rem;
+ }
+ .sec1{
+     height: 50vh;
+ }
+ .text2{
+     position: relative;
+     left: -11rem;
+    font-size: 1.25rem;
+ }
+ .text21{
+     position: relative;
+     left: -3rem;
+    font-size: 1rem;
+ }
+ .text22{
+    position: relative;
+    left: -3rem;
+    font-size: 0.75rem;
+    width: 13rem;
+ }
+ .learn{
+     position: relative;
+     left: -3rem;
+ }
+ .img{
+     position: relative;
+     left: -25rem;
+     top: -15rem;
+     width: 20rem;
+ }
+ .ph1{
+     width: 8rem;
+     height: 7rem;
+     position: relative;
+     left: 33rem;
+     top: -5rem;
+ }
+ .ph2{
+    width: 8rem;
+    height: 7rem;
+    position: relative;
+     left: 45rem;
+     top: -7rem;
+}
+.ph3{
+    width: 8rem;
+    height: 7rem;
+    position: relative;
+    left: 31rem;
+    top: -15.7rem;
+}
+.sec2{
+height: 100vh;
+position: relative;
+top: 3rem;
+}
+.resp{
+    font-size: 0.5rem;
+}
+.world{
+    position: relative;
+    top: -6rem;
+    margin: 0;
+    display: inline-block;
+}
+.nature{
+    position: relative;
+    top: -6rem;
+    margin: 0;
+    display: inline-block;
+}
+.way{
+    margin: 0;
+}
+.life{
+    margin: 0;
+}
+.sec3{
+    height: 190vh;
+    position: relative;
+    top: 20rem;
+    left: 0.02rem;
+}
+.head2{
+    font-size: 2rem;
+    width: 30rem;
+    position: relative;
+    left: 3rem;
+}
+.tour1{
+ margin: 0rem;
+ position: relative;
+ top: 6rem;
+}
+.tour2{
+    margin: 0rem;
+    position: relative;
+    top: -3rem;
+}
+.tour3{
+    margin: 0rem;
+    position: relative;
+    top: -12rem;
+}
 }
